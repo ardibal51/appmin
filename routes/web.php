@@ -32,6 +32,7 @@ Route::delete('/merk/destroy-all', [MerkController::class, 'destroyAll'])->name(
 // 📏 Modul Unit
 Route::get('/unit', [UnitController::class, 'index'])->name('unit.index');
 Route::post('/unit', [UnitController::class, 'store'])->name('unit.store');
+Route::post('/unit/table', [UnitController::class, 'table'])->name('unit.table'); // nih buat manggil data pake datatable
 Route::put('/unit/{unit}', [UnitController::class, 'update'])->name('unit.update');
 Route::delete('/unit/{unit}', [UnitController::class, 'destroy'])->name('unit.destroy');
 Route::post('/unit/update-multiple', [UnitController::class, 'updateMultiple'])->name('unit.updateMultiple');
